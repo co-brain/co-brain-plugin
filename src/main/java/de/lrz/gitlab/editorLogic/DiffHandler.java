@@ -71,7 +71,7 @@ public class DiffHandler {
     }
 
     public static String getCommitID() throws IOException {
-        String[] commit = runCommand("remote get-url origin").get(0).split(" ");
+        String[] commit = runCommand("log origin").get(0).split(" ");
         String commitID = commit[commit.length-1];
         return commitID;
     }

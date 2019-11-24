@@ -66,7 +66,7 @@ public class LineSelectorAction extends AnAction {
         EMailHandler eMailHandler = new EMailHandler();
         boolean result= eMailHandler.handleTicket(ticket);
         // if mailLogic returns true then acknowledge the transmission of the message
-        Messages.showMessageDialog(project, "Your message has been sent!", "Transmission successful!", Messages.getInformationIcon());
+        
         if(result){
             Messages.showMessageDialog(project, "Your message has been sent!", "Transmission successful!", Messages.getInformationIcon());
         }else{
